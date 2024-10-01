@@ -1,0 +1,56 @@
+:root {
+    --blanco: #FFFFFF;
+    --oscuro: #212121;
+    --primario: #FFC107;
+    --secundario: #0097A7;
+    --gris: #757575;
+}
+
+html {
+    font-size: 62.5%; /* Tamaño de fuente */
+}
+
+body {
+    font-size: 16px;
+    font-family: "Krub", sans-serif; /* Tipo de fuente */
+}
+
+.titulo {
+    text-align: center; /* Centrar un texto */
+    font-size: 3.8rem; /* Tamaño de fuente */
+}
+
+.titulo span {
+    font-size: 2rem; /* Tamaño de fuente */
+}
+
+.contenedor {
+    width: 120rem;
+    margin: 0 auto;
+}
+
+.nav-bg {
+    background-color: var(--secundario);
+}
+
+.navegacion-principal {
+    display: flex;
+    justify-content: space-between;
+}
+
+.navegacion-principal a {
+    padding: 1rem;
+    color: var(--blanco);
+    text-decoration: none;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+.navegacion-principal a:hover {
+    background-color: var(--primario);
+    color: var(--oscuro);
+}
+
+@media (min-width: 480px) {
+
+}

@@ -4,22 +4,30 @@
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>Diseñador Freelancer</title>
+        <link rel="preload" href="css/styles.css" as="style">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link href="https://fonts.googleapis.com/css2?family=Krub:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+        <link rel="preload" href="css/styles.css" as="style">
+        <link rel="stylesheet" href="css/styles.css">
     </head>
     <body>
         <header>
             <!-- Se utiliza h1 para indicar la importancia, h1 es el mas importante, el h6 es el menos importante -->
-            <h1>Adrián González Freelancer</h1>
+            <h1 class="titulo">Adrián González <span>Freelancer</span></h1>
         </header>
 
-        <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Sobre mi</a>
-            <a href="#">Clientes</a>
-            <a href="#">Contactos</a>
-        </nav>
+        <div class="nav-bg">
+
+            <nav class="navegacion-principal contenedor">
+                <a href="#">Inicio</a>
+                <a href="#">Sobre mi</a>
+                <a href="#">Clientes</a>
+                <a href="#">Contactos</a>
+            </nav>
+        </div>
 
         <section>
-            <h2>Diseño y Desarrollo Web Freelancer</h2>
+            <h2 class="titulo">Diseño y Desarrollo Web <span>Freelancer</span></h2>
 
             <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-map-pin" width="88" height="88" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffc107" fill="none" stroke-linecap="round" stroke-linejoin="round">
                 <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
