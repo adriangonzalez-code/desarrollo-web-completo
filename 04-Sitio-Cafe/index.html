@@ -3,12 +3,22 @@
   <head>
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1">
+      <meta name="description" content="Página web de blog de Café">
+
       <title>Blog de Café</title>
+      <!-- Prefetch -->
+      <link rel="prefetch" href="nosotros.html" as="document">
+
+      <!-- Preload -->
+      <link rel="preload" href="css/normalize.css" as="style">
       <link rel="stylesheet" href="css/normalize.css">
-      <link rel="preconnect" href="https://fonts.googleapis.com">
-      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet">
+
+      <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" crossorigin="crossorigin" as="font">
+
+      <link rel="preload" href="css/styles.css" as="style">
       <link rel="stylesheet" href="css/styles.css">
+
+      <link rel="preload" href="img/banner.jpg" as="image">
   </head>
   <body>
     <header class="header">
@@ -39,7 +49,10 @@
 
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog1.jpg" alt="Imagen Blog">
+                    <picture>
+                        <source srcset="img/blog1.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog1.jpg" alt="Imagen Blog">
+                    </picture>
                 </div>
 
                 <div class="entrada__contenido">
@@ -50,12 +63,15 @@
                         tellus et quam iaculis commodo. Aliquam cursus turpis sed elit consequat placerat sit amet in ante. Nulla libero ex, imperdiet non faucibus a, sagittis sit amet ligula. Sed blandit ante est, nec aliquet quam pulvinar sed. Sed varius, lacus
                         in facilisis ultrices, urna turpis ullamcorper nibh, sit amet interdum nisi nisi eget arcu. Vestibulum bibendum velit justo, eget cursus ipsum pharetra in.
                     </p>
-                    <a href="" class="boton boton--primario">Leer Entrada</a>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
                 </div>
             </article>
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog2.jpg" alt="Imagen Blog">
+                    <picture>
+                        <source srcset="img/blog2.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog2.jpg" alt="Imagen Blog">
+                    </picture>
                 </div>
 
                 <div class="entrada__contenido">
@@ -66,12 +82,15 @@
                         tellus et quam iaculis commodo. Aliquam cursus turpis sed elit consequat placerat sit amet in ante. Nulla libero ex, imperdiet non faucibus a, sagittis sit amet ligula. Sed blandit ante est, nec aliquet quam pulvinar sed. Sed varius, lacus
                         in facilisis ultrices, urna turpis ullamcorper nibh, sit amet interdum nisi nisi eget arcu. Vestibulum bibendum velit justo, eget cursus ipsum pharetra in.
                     </p>
-                    <a href="" class="boton boton--primario">Leer Entrada</a>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
                 </div>
             </article>
             <article class="entrada">
                 <div class="entrada__imagen">
-                    <img src="img/blog3.jpg" alt="Imagen Blog">
+                    <picture>
+                        <source srcset="img/blog3.webp" type="image/webp">
+                        <img loading="lazy" src="img/blog3.jpg" alt="Imagen Blog">
+                    </picture>
                 </div>
 
                 <div class="entrada__contenido">
@@ -82,7 +101,7 @@
                         tellus et quam iaculis commodo. Aliquam cursus turpis sed elit consequat placerat sit amet in ante. Nulla libero ex, imperdiet non faucibus a, sagittis sit amet ligula. Sed blandit ante est, nec aliquet quam pulvinar sed. Sed varius, lacus
                         in facilisis ultrices, urna turpis ullamcorper nibh, sit amet interdum nisi nisi eget arcu. Vestibulum bibendum velit justo, eget cursus ipsum pharetra in.
                     </p>
-                    <a href="" class="boton boton--primario">Leer Entrada</a>
+                    <a href="entrada.html" class="boton boton--primario">Leer Entrada</a>
                 </div>
             </article>
         </main>
@@ -121,5 +140,6 @@
             </div>
         </div>
     </footer>
+    <script src="js/modernizr.js"></script>
   </body>
 </html>
